@@ -238,7 +238,7 @@ header{
     text-align: right;
     position: relative;
     left: -1.5em;
-    width: calc(100% + 1.5em); /*Makes the accent be full length and come out across the picture on the left */
+    width: calc(105% + 1.5em); /*Makes the accent be full length and come out across the picture on the left */
   }
 }
 /*Services Section*/
