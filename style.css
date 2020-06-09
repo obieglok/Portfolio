@@ -320,6 +320,7 @@ header{
     position:relative;
     z-index:2;
   }
+
 }
 /* the portfolio */
 .section__subtitle-work{
@@ -335,7 +336,7 @@ header{
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 /*
     margin:0 auto;
     width:1000px;
@@ -353,7 +354,6 @@ header{
         opacity 250ms linear;
     min-width: 250px;
     min-height: 250px;
-    max-height:250px;
 }
 
 .portfolio__item:focus {
@@ -425,12 +425,21 @@ header{
 .mainportfolio_img{
   grid-area:img;
   min-width:300px;
+  max-height: 400px;
   position:relative;
   z-index: 2;
   box-shadow: var(--bs)
 }
 .miniportfolio_img{
   max-width:400px;
+  min-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: var(--bs)
+}
+.portfolio_video{
+  max-width:800px;
   min-height: 300px;
   display: block;
   margin-left: auto;
