@@ -422,3 +422,15 @@ header{
   margin-right: 0 auto;
 }
 /* Individual Portfolio pages */
+.mainportfolio_img{
+  grid-area:img;
+  min-width:300px;
+  position:relative;
+  z-index: 2;
+}
+.miniportfolio_img{
+  max-width:400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
