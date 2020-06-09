@@ -278,7 +278,7 @@ header{
     margin-right: auto;
   }
   /* So there is space between the columns */
-  .services+ .services{
+  .service + .service{
     margin-left: 2em;
   }
 }
@@ -289,6 +289,7 @@ header{
 }
 .about-me__img{
   box-shadow: var(--bs);
+  min-width:250px;
 }
 @media (min-width: 600px){
   .about-me{
@@ -309,7 +310,7 @@ header{
     grid-row:2;
     position:relative;
     left:-1em;
-    width:calc(100% + 2em);
+    width:calc(100% + 4em);
     padding-left: 1em;
     /* side bar */
     padding-right:calc(100px + 4em);
@@ -350,13 +351,16 @@ header{
     transition:
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+    min-width: 250px;
+    min-height: 250px;
+    max-height:250px;
 }
 
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
 }
-
+/* Makes the portfolio image increase in size when you hover over it */
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
@@ -417,3 +421,4 @@ header{
   margin-left: auto;
   margin-right: 0 auto;
 }
+/* Individual Portfolio pages */
