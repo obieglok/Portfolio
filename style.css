@@ -430,6 +430,7 @@ header{
 }
 .miniportfolio_img{
   max-width:400px;
+  min-height: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
