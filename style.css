@@ -446,3 +446,27 @@ header{
   margin-right: auto;
   box-shadow: var(--bs)
 }
+/* weather api */
+.weather-container{
+  text-align:center;
+  background:#ccc;
+
+}
+.weather{
+  font-size:22px;
+  margin:0;
+}
+.temp{
+  font-size:22px;
+  margin:0;
+  font-weight:bold;
+}
+.weatherpicture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#form,#error{
+  text-align:center;
+
+}
