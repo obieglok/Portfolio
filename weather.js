@@ -3,14 +3,14 @@ var locationn="Dublin,ie";
 locationn=document.getElementById("Location").value;
 const form=document.getElementById("form");
 const errorElement=document.getElementById("error");
-form.addEventListener("submit", () => {
+form.addEventListener("click", () => {
   console.log("here");
   let messages= [];
   if(locationn.value=== '' || locationn.value===null){
     messages.push("Location is Required");
   }
   if(messages.length>0){
-      //e.preventDefault();
+      //event.preventDefault();
       errorElement.innerText=messages.join(', ');
   }
 });
