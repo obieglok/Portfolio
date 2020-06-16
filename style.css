@@ -466,7 +466,7 @@ header{
   margin-left: auto;
   margin-right: auto;
 }
-#form{
+#form,#error{
   text-align:center;
 
 }
