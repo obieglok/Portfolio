@@ -33,39 +33,38 @@
       <h1 class="section__title section__title--intro">
         Check your Temp <strong>Weather API</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro"> First API</p>
+      <p class="section__subtitle section__subtitle--intro"> My First API</p>
       <img src="images/openweather.jpg" alt="Image of OpenWeather Logo" class="mainportfolio_img">
     </section>
 
     <!-- Weather Api goes here -->
     <!-- <div class="weather"></div> -->
-    <div id="error"></div>
-    <form action="/weather.js" method 'GET' id="form" >
-      <div>
-      <label for="Location"> Location:</label><br>
-      <input type="text" id="Location" name="Location"><br>
-    </div>
-    <input onclick="history.go(0)" type="button" value="Refresh">
-      <!-- <button type="submit" onClick="history.go(0)" VALUE="Refresh"> Submit</button> -->
-    </form>
-    <div class="weather-container">
-        <p class="location"></p>
-        <p class="country"></p>
-        <img class="weatherpicture">
-        <p class="weather"></p>
-        <p class = "temp"></p>
-      </div>
-    <script src="weather.js"></script>
     <div class="portfolio-item-individual">
-      <p> I have wanted to try playing around with API's for a while now. Weather API's seemed to be a perfect place to start!
-      Github Pages do not allow php files, and therefore I wasn't able to let viewers input their own location for which they want to request Data.
-      <br>
-      <br>
+      <p> Enter the location that you want to get the temperature for in the Location field. For Dublin, Ireland please write "dublin,ie", else it will show you temperatures for Dublin in America. Once you have chosen your location please press the Refresh button located underenath the field text. </p>
+      <div id="error"></div>
+      <form action="/weather.js" method 'GET' id="form" >
+        <div>
+        <label for="Location"> Location:</label><br>
+        <input type="text" id="Location" name="Location"><br>
+      </div>
+      <input onclick="history.go(0)" type="button" value="Refresh">
+        <!-- <button type="submit" onClick="history.go(0)" VALUE="Refresh"> Submit</button> -->
+      </form>
+      <div class="weather-container">
+          <p class="location"></p>
+          <p class="country"></p>
+          <img class="weatherpicture">
+          <p class="weather"></p>
+          <p class = "temp"></p>
+        </div>
 
-      If you enter the location you are interested in and refresh the page it will show you the weather for that place.
+      <p> I have wanted to try playing around with API's for a while now. Weather API's seemed to be a perfect place to start!
+      Github Pages do not allow php files, which made it a little bit more tricky to get it working as I am still a newbie when it comes to javaScript and JQuery.
       <br>
       <br>
-    Above you can see the current weather for Dublin. </p>
+      I think for this being my first go at API's it came out well!
+      <br>
+      <br>
      </p>
     </div>
 
@@ -79,5 +78,6 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="weather.js"></script>
   </body>
 </html>
