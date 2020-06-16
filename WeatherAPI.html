@@ -24,6 +24,7 @@
             <li class="nav__item"><a href="index.html#services" class="nav__link">What I Do</a></li>
             <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
             <li class="nav__item"><a href="index.html#work" class="nav__link">More</a></li>
+
           </ul>
         </nav>
     </header>
@@ -38,12 +39,22 @@
 
     <!-- Weather Api goes here -->
     <!-- <div class="weather"></div> -->
+    <div id="error"></div>
+    <form action="/" method 'GET' id="form" >
+      <div>
+      <label for="Location"> Location:</label><br>
+      <input type="text" id="Location" name="Location"><br>
+    </div>
+      <button type="submit"> Submit</button>
+    </form>
     <div class="weather-container">
+        <p class="location"></p>
         <img class="weatherpicture">
         <p class="weather"></p>
         <p class = "temp"></p>
       </div>
     <script src="weather.js"></script>
+
 
     <!-- Footer -->
     <footer class="footer">
