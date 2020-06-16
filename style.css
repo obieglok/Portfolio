@@ -449,17 +449,17 @@ header{
 /* weather api */
 .weather-container{
   text-align:center;
-  background:#ccc;
+  /* background:#ccc; */
+  font-size:var(--fs-h3);
 
 }
 .weather{
-  font-size:22px;
   margin:0;
 }
 .temp{
-  font-size:22px;
+  font-weight:var(--fw-bold);
+  font-size:var(--fs-h2);
   margin:0;
-  font-weight:bold;
 }
 .weatherpicture{
   display: block;

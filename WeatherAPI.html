@@ -40,19 +40,18 @@
     <!-- Weather Api goes here -->
     <!-- <div class="weather"></div> -->
     <div class="portfolio-item-individual">
-      <p> Enter the location that you want to get the temperature for in the Location field. For Dublin, Ireland please write "dublin,ie", else it will show you temperatures for Dublin in America. Once you have chosen your location please press the Refresh button located underenath the field text. </p>
+      <p> Enter the location that you want to get the temperature for in the Location field. For Dublin, Ireland please write "dublin,ie", else it will show you temperatures for Dublin in America. Once you have chosen your location please press the Submit button. </p>
       <div id="error"></div>
       <form action="/weather.js" method 'GET' id="form" >
         <div>
         <label for="Location"> Location:</label><br>
         <input type="text" id="Location" name="Location"><br>
       </div>
-      <input onclick="history.go(0)" type="button" value="Refresh">
+      <input onclick="history.go(0)" type="button" value="Submit">
         <!-- <button type="submit" onClick="history.go(0)" VALUE="Refresh"> Submit</button> -->
       </form>
       <div class="weather-container">
           <p class="location"></p>
-          <p class="country"></p>
           <img class="weatherpicture">
           <p class="weather"></p>
           <p class = "temp"></p>
