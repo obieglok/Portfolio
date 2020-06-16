@@ -449,9 +449,15 @@ header{
 /* weather api */
 .weather-container{
   text-align:center;
+  
   /* background:#ccc; */
   font-size:var(--fs-h3);
 
+}
+.label{
+  text-align:center;
+
+  font-size:var(--fs-h3);
 }
 .weather{
   margin:0;
