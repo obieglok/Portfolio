@@ -27,12 +27,11 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+ locationn +"&uni
   var location=data.name;
   var country=data.sys.country;
   var wind=data.wind.speed;
-  $('.weather-icon').attr('src',icon);
+  $('.weatherpicture').attr('src',icon);
   $('.weather').append(weather);
-  $(".temp").append(temp + " C").innerHTML;
+  $(".temp").append(temp + " °C");
   $(".country").append(country);
-  $(".wind").append(wind);
   // console.log(location);
-  $(".location").append(location);
+  $(".location").append(location+" "+country);
 
 });

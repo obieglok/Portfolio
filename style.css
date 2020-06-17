@@ -448,122 +448,28 @@ header{
 }
 /* weather api */
 
-/* .weather-container{
+ .weather-container{
   text-align:center;
-  /* background:#ccc;
   font-size:var(--fs-h3);
 
 }
 .weather{
+  font-size:22px;
   margin:0;
 }
 .temp{
   font-weight:var(--fw-bold);
   font-size:var(--fs-h2);
   margin:0;
+
 }
 .weatherpicture{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-*/
-/* #form,#error{
+
+ #form,#error{
   text-align:center;
 
-} */
-.container {
-  max-width: 90%;
-  width: 1200px;
-  background-color: white;
-  box-shadow: 0 5px 10px black;
-  border-radius: 5px;
-}
-.weather-container {
-  position: relative;
-  top: 70px;
-  padding: 20px;
-  background-color: white;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-}
-.weather-icon {
-  position: relative;
-  top: 70px;
-  padding: 20px;
-  background-color: white;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-}
-.weather-header {
-  background-color: #222;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.general-weather-information {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-
-.weather-content {
-  padding: 40px;
-  margin-top: 50px;
-}
-.location {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.weather {
-  font-size: 2rem;
-  font-weight: normal;
-  margin-top: 10px;
-}
-
-.weather-details {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.detail-weather {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: 0;
-  flex-grow: 1;
-  padding: 20px;
-}
-
-.detail.bordered {
-  border-left: 1px solid #777;
-  border-right: 1px solid #777;
-}
-
-.detail-weather .weather-title {
-  font-size: 2rem;
-  flex-grow: 1;
-  font-weight: bold;
-  color: #777;
-}
-
-.detail-weather .temp {
-  font-size: 2rem;
-  margin-top: 20px;
-}
-.detail-weather .rain {
-  font-size: 2rem;
-  margin-top: 20px;
-}
-.detail-weather .wind {
-  font-size: 2rem;
-  margin-top: 20px;
 }

@@ -33,52 +33,30 @@
       <h1 class="section__title section__title--intro">
         Check your Temp <strong>Weather API</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro"> My First API</p>
+      <p class="section__subtitle section__subtitle--intro"> Using API's for the first time</p>
       <img src="images/openweather.jpg" alt="Image of OpenWeather Logo" class="mainportfolio_img">
     </section>
 
     <!-- Weather Api goes here -->
     <!-- <div class="weather"></div> -->
-    <div class="container">
+    <div class="portfolio-item-individual">
       <p> Enter the location that you want to get the temperature for in the Location field. For Dublin, Ireland please write "dublin,ie", else it will show you temperatures for Dublin in America. Once you have chosen your location please press the Submit button. </p>
-      <div class="weather-container">
       <div id="error"></div>
-      <div class="weather-header">
-          <img class="weather-icon">
-            <canvas id="weather-icon" width="100" height="100">
-          </div>
-
-      <div class="weather-content">
-        <div class="general-weather-information">
-          <div class="location">Enter A Location</div>
-          <div class="weather">To Find The Weather</div>
-          <!-- <img class="weatherpicture"> -->
-        </div>
-        <div  class="weather-deatils">
-          <div class="detail-weather">
-            <div class="weather-title">Wind</div>
-            <div class="wind"></div>
-        </div>
-        <div class="detail bordered">
-            <div class="weather-title">Temperature</div>
-          <div class="temp"></div>
-        </div>
-        <div class="detail-weather">
-          <div class="weather-title">Rain</div>
-          <div class="rain"></div>
-      </div>
-        </div>
       <form action="/weather.js" method 'GET' id="form" >
         <div>
-        <label for="Location"> Location:</label><br>
-        <input type="text" id="Location" name="Location" placeholder="Enter Location"><br>
+        <!-- <label for="Location" class="label"> Location:</label><br> -->
+        <input type="text" id="Location" name="Location"  placeholder="Enter Location"><br>
       </div>
       <input onclick="history.go(0)" type="button" value="Submit">
         <!-- <button type="submit" onClick="history.go(0)" VALUE="Refresh"> Submit</button> -->
       </form>
-    </div>
-  </div>
-  </div>
+      <div class="weather-container">
+          <p class="location"></p>
+          <img class="weatherpicture">
+          <p class="weather"></p>
+          <p class = "temp"></p>
+        </div>
+
       <p> I have wanted to try playing around with API's for a while now. Weather API's seemed to be a perfect place to start!
       Github Pages do not allow php files, which made it a little bit more tricky to get it working as I am still a newbie when it comes to javaScript and JQuery.
       <br>
