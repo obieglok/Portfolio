@@ -29,7 +29,12 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+ locationn +"&uni
   var wind=data.wind.speed;
   $('.weatherpicture').attr('src',icon);
   $('.weather').append(weather);
+  $(".temptitle").append("Temperature");
   $(".temp").append(temp + " °C");
+  $(".windtitle").append("Wind Speed");
+  $(".wind").append(wind);
+//  $(".raintitle").append("Rain");
+
 //  $(".country").append(country);
   // console.log(location);
   $(".location").append(location+", "+country);
