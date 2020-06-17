@@ -36,11 +36,18 @@
       <p class="section__subtitle section__subtitle--intro"> Using API's for the first time</p>
       <img src="images/openweather.jpg" alt="Image of OpenWeather Logo" class="mainportfolio_img">
     </section>
+    <div class="portfolio-item-individual">
+      <p> Enter the location that you want to get the temperature for in the Location field. For Dublin, Ireland please write "dublin,ie", else it will show you temperatures for Dublin in America. Once you have chosen your location please press the Submit button. </p>
 
     <!-- Weather Api goes here -->
     <!-- <div class="weather"></div> -->
-    <div class="portfolio-item-individual">
-      <p> Enter the location that you want to get the temperature for in the Location field. For Dublin, Ireland please write "dublin,ie", else it will show you temperatures for Dublin in America. Once you have chosen your location please press the Submit button. </p>
+      <div class="weather-container">
+          <p class="location"></p>
+          <img class="weatherpicture">
+          <p class="weather"></p>
+          <p class = "temp"></p>
+        </div>
+        <br>
       <div id="error"></div>
       <form action="/weather.js" method 'GET' id="form" >
         <div>
@@ -50,12 +57,6 @@
       <input onclick="history.go(0)" type="button" value="Submit">
         <!-- <button type="submit" onClick="history.go(0)" VALUE="Refresh"> Submit</button> -->
       </form>
-      <div class="weather-container">
-          <p class="location"></p>
-          <img class="weatherpicture">
-          <p class="weather"></p>
-          <p class = "temp"></p>
-        </div>
 
       <p> I have wanted to try playing around with API's for a while now. Weather API's seemed to be a perfect place to start!
       Github Pages do not allow php files, which made it a little bit more tricky to get it working as I am still a newbie when it comes to javaScript and JQuery.

@@ -30,8 +30,8 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+ locationn +"&uni
   $('.weatherpicture').attr('src',icon);
   $('.weather').append(weather);
   $(".temp").append(temp + " °C");
-  $(".country").append(country);
+//  $(".country").append(country);
   // console.log(location);
-  $(".location").append(location+" "+country);
+  $(".location").append(location+", "+country);
 
 });
