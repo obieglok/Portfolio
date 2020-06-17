@@ -451,7 +451,9 @@ header{
 
  .weather-container{
   text-align:center;
+
   font-size:var(--fs-h3);
+
 }
 @media(min-width: 800px){
   .weather-sections{
