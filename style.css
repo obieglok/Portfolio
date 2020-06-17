@@ -281,6 +281,7 @@ header{
   .service + .service{
     margin-left: 2em;
   }
+
 }
 /* The about me Section */
 .about-me{
@@ -447,32 +448,38 @@ header{
   box-shadow: var(--bs)
 }
 /* weather api */
-.weather-container{
-  text-align:center;
-  
-  /* background:#ccc; */
-  font-size:var(--fs-h3);
 
-}
-.label{
+ .weather-container{
   text-align:center;
 
   font-size:var(--fs-h3);
+
 }
-.weather{
-  margin:0;
+@media(min-width: 800px){
+  .weather-sections{
+    /* padding-left: 150px; */
+  text-align:center;
+  align-items: center;
+    width:100%;
+    justify-content: center;
+    display:block;
+    display:flex;
+
+
+  }
+  .weather-section + .weather-section{
+    margin-left: 2em;
+  }
 }
-.temp{
-  font-weight:var(--fw-bold);
-  font-size:var(--fs-h2);
-  margin:0;
-}
+
 .weatherpicture{
   display: block;
+
   margin-left: auto;
   margin-right: auto;
 }
-#form,#error{
+
+ #form,#error{
   text-align:center;
 
 }

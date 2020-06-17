@@ -23,21 +23,20 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+ locationn +"&uni
 
   var icon="https://openweathermap.org/img/w/" + data.weather[0].icon +".png";
   var temp=Math.round(data.main.temp);
-  var weather=data.weather[0].description;
-  weather=weather.charAt(0).toUpperCase()+weather.slice(1);
+  var weather=data.weather[0].main;
   var location=data.name;
   var country=data.sys.country;
+  var wind=data.wind.speed;
   $('.weatherpicture').attr('src',icon);
   $('.weather').append(weather);
-  $(".temp").append(temp + "°C");
-  // $(".country").append(country +" " + location);
+  $(".temptitle").append("Temperature");
+  $(".temp").append(temp + " °C");
+  $(".windtitle").append("Wind Speed");
+  $(".wind").append(wind);
+//  $(".raintitle").append("Rain");
+
+//  $(".country").append(country);
   // console.log(location);
-  $(".location").append(location+" " + country);
+  $(".location").append(location+", "+country);
 
 });
-// function locationofPerson()
-// {
-//   var input=document.getElementById("Location").value;
-//   console.log(input);
-//   alert(input);
-// }
