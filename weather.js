@@ -1,26 +1,25 @@
 
-var locationn="Dublin,ie";
-locationn=document.getElementById("Location").value;
+// var locationn="Dublin,ie";
+var locationn=document.getElementById("Location").value
 const form=document.getElementById("form");
 const errorElement=document.getElementById("error");
-form.addEventListener("click", () => {
-  console.log("here");
+form.addEventListener("Submit", () => {
+  // console.log("here");
   let messages= [];
-  if(locationn.value=== '' || locationn.value===null){
+  if(locationn=== '' || locationn===null){
     messages.push("Location is Required");
   }
+
+
   if(messages.length>0){
       //event.preventDefault();
       errorElement.innerText=messages.join(', ');
   }
 });
-console.log(locationn);
 
-var city="Dublin,ie";
 
-$.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+ locationn +"&units=metric&appid=47c201283320c692edd6f99afa43fb97",function(data){
-  console.log(data);
-
+$.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+ locationn+"&units=metric&appid=47c201283320c692edd6f99afa43fb97",function(data){
+  //console.log(data);
   var icon="https://openweathermap.org/img/w/" + data.weather[0].icon +".png";
   var temp=Math.round(data.main.temp);
   var weather=data.weather[0].main;
@@ -33,10 +32,8 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+ locationn +"&uni
   $(".temp").append(temp + " °C");
   $(".windtitle").append("Wind Speed");
   $(".wind").append(wind);
-//  $(".raintitle").append("Rain");
-
-//  $(".country").append(country);
-  // console.log(location);
+  // $(".weather-container").append(box);
+  document.getElementById("location").innerHTML = "";
   $(".location").append(location+", "+country);
 
 });

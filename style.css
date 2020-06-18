@@ -484,3 +484,6 @@ header{
   text-align:center;
 
 }
+.boxshadow{
+  box-shadow: var(--bs);
+}
